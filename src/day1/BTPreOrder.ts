@@ -15,5 +15,7 @@ function walk(
 }
 
 export default function pre_order_search(head: BinaryNode<number>): number[] {
-    return walk(head, []);
+    const path = walk(head, []);
+    console.log("paht", path);
+    return path
 }
